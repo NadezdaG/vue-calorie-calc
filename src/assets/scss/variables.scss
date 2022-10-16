@@ -1,0 +1,26 @@
+@use "breakpoints.scss";
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap");
+:root {
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-1: #5e6472;
+  --color-2: #aed9e0;
+  --color-3: #ffa69e;
+  --color-4: #b8f2e6;
+  --color-5: #faf3dd;
+
+  --background-color: var(--color-3);
+  --text-color: var(--color-white);
+
+  --font-family: "Raleway";
+
+  --font-size: 16px;
+
+  @include breakpoints.device(breakpoints.$medium) {
+    --font-size: 18px;
+  }
+
+  @include breakpoints.device(breakpoints.$large) {
+    --font-size: 18px;
+  }
+}

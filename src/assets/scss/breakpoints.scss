@@ -1,0 +1,15 @@
+$small: 414px;
+$medium: 768px;
+$large: 1024px;
+
+@mixin device($size: "768px", $type: "min-width") {
+  @media screen and (#{$type}: #{$size}) {
+    @content;
+  }
+}
+
+/* 
+@include breakpoints.device(breakpoints.$medium) {
+  font-size: 1.8em;
+}
+*/
